@@ -1,6 +1,6 @@
 export const getRandomGreeting = () => {
   return (dispatch) => {
-    fetch('/api/random_greeting')
+    fetch('/api/greetings/index')
       .then((response) => response.json())
       .then((data) => dispatch(setRandomGreeting(data.greeting)))
       .catch((error) => console.error(error));
