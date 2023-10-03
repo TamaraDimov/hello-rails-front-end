@@ -1,13 +1,13 @@
 const initialState = {
-  randomGreeting: '', // Initialize with an empty string
+  randomGreeting: '',
 };
 
-const reducer = (state = initialState, action) => {
+const reducer = (state = initialState, action,) => {
   switch (action.type) {
     case 'SET_RANDOM_GREETING':
       return {
         ...state,
-        randomGreeting: action.greeting, // Corrected 'greetings' to 'greeting'
+        randomGreeting: action.greeting,
       };
     default:
       return state;
