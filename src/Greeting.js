@@ -7,7 +7,7 @@ function Greeting() {
 
   useEffect(() => {
     // Fetch the random greeting from the API endpoint
-    fetch('/api/random_greeting')
+    fetch('http://127.0.0.1:3000/random_greeting')
       .then((response) => {
         console.log('Response status:', response.status);
         return response.json();
